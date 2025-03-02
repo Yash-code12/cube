@@ -4,7 +4,7 @@
 # compile CXX with /data/user/0/ru.iiec.cxxdroid/files/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I"/storage/emulated/0/C++ projects/Cube/include" -I"/storage/emulated/0/C++ projects/Cube/glm-master"
+CXX_INCLUDES = -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I"/storage/emulated/0/C++ projects/Cube/include" -I"/storage/emulated/0/C++ projects/Cube/shaders" -I"/storage/emulated/0/C++ projects/Cube/glm-master"
 
 CXX_FLAGS = -Wall -std=c++17 -fallow-void-main
 

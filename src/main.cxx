@@ -7,11 +7,22 @@
 
 #include <GLES2/gl2.h>
 #include <iostream>
+#include <vector>
 
 #include "window_initializer.h"
 #include "shader_compiler.h"
 
 using namespace std;
+
+vector<GLfloat> quadVertices = {
+    // Positions, Texture Coordinates
+    -1.0f,  1.0f,  0.0f,  0.0f, 1.0f,  // Top-left
+    -1.0f, -1.0f,  0.0f,  0.0f, 0.0f,  // Bottom-left
+     1.0f, -1.0f,  0.0f,  1.0f, 0.0f,  // Bottom-right
+    -1.0f,  1.0f,  0.0f,  0.0f, 1.0f,  // Top-left
+     1.0f, -1.0f,  0.0f,  1.0f, 0.0f,  // Bottom-right
+     1.0f,  1.0f,  0.0f,  1.0f, 1.0f   // Top-right
+};
 
 int main(){
     SDL_Window* window = nullptr;
@@ -22,10 +33,18 @@ int main(){
     if (initSDL(window, context, width, height) != 0) {
         return -1;
     }
-    std::cout << "Width: " << width << ", " << "Height: " << height << "\n";
+    cout << "Width: " << width << ", " << "Height: " << height << "\n";
     glViewport(0, 0, width, height);  // width and height from SDL window
     
+    GLuint program = makeProgram("shaders/vert.glsl", "shaders/frag.glsl");
+    if(program == -1){
+        cleanup(window, context);
+        return -1;
+    }
+    
     float bgColor[4] = {0.0f,0.0f,0.0f,1.0f};
+    
+    makeQuad(quadVertices, program);
     
     SDL_Event event;
     bool running = true;
@@ -35,8 +54,14 @@ int main(){
                 running = false;
             }
         }
+        
+        glUseProgram(program);
+        
         glClearColor(bgColor[0], bgColor[1], bgColor[2], bgColor[3]);
         glClear(GL_COLOR_BUFFER_BIT);
+        
+        // Draw the quad
+        glDrawArrays(GL_TRIANGLES, 0, 6);
         
         SDL_GL_SwapWindow(window);
     }
@@ -46,4 +71,3 @@ int main(){
     
     return 0;
 }
->>>>>>> 22689a4 (Added glm library (unused for now). updated src and include, Working window)

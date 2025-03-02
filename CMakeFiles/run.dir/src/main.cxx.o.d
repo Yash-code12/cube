@@ -313,6 +313,8 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__bsd_locale_fallbacks.h \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/bitset \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__bit_reference \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/vector \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__split_buffer \
   /storage/emulated/0/C++\ projects/Cube/include/window_initializer.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_main.h \
