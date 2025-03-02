@@ -1,30 +1,35 @@
-cmake_minimum_required(VERSION 3.10) 
-project(voxel_game)
+cmake_minimum_required(VERSION 3.10)
+project(Cube)
 
 # Find SDL2
 find_package(SDL2 REQUIRED)
-find_package(SDL2_image REQUIRED)
-find_package(SDL2_ttf REQUIRED)
-find_package(SDL2_mixer REQUIRED)
 
 # Add include directories
 include_directories(${SDL2_INCLUDE_DIRS})
-include_directories(${SDL2_IMAGE_INCLUDE_DIRS})
-include_directories(${SDL2_TTF_INCLUDE_DIRS})
-include_directories(${SDL2_MIXER_INCLUDE_DIRS})
 include_directories(include)
+#include_directories(shaders)
+include_directories(glm-master)
+>>>>>>> 22689a4 (Added glm library (unused for now). updated src and include, Working window)
 
 # Create executable
 add_executable(run 
 src/main.cxx 
+<<<<<<< HEAD
+=======
+src/window_initializer.cxx 
+src/shader_compiler.cxx 
+>>>>>>> 22689a4 (Added glm library (unused for now). updated src and include, Working window)
 )
 
 # Link libraries
 target_link_libraries(run 
     ${SDL2_LIBRARIES}
+<<<<<<< HEAD
     ${SDL2_IMAGE_LIBRARIES}
     ${SDL2_TTF_LIBRARIES}
     ${SDL2_MIXER_LIBRARIES}
+=======
+>>>>>>> 22689a4 (Added glm library (unused for now). updated src and include, Working window)
 )
 
 #For android only

@@ -1,0 +1,3 @@
+/storage/emulated/0/C++ projects/Cube/CMakeFiles/rebuild_cache.dir
+/storage/emulated/0/C++ projects/Cube/CMakeFiles/edit_cache.dir
+/storage/emulated/0/C++ projects/Cube/CMakeFiles/run.dir

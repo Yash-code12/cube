@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/glm-master\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/main.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/main.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/main.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/glm-master\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/window_initializer.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/window_initializer.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/window_initializer.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/glm-master\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/shader_compiler.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/shader_compiler.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/shader_compiler.cxx"
+}
+]
