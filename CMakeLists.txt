@@ -8,7 +8,7 @@ find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 include_directories(include)
 include_directories(shaders)
-include_directories(glm-master)
+#include_directories(glm-master)
 
 # Create executable
 add_executable(run 
