@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/run.dir/src/buffer_setter.cxx.o"
+  "CMakeFiles/run.dir/src/buffer_setter.cxx.o.d"
   "CMakeFiles/run.dir/src/main.cxx.o"
   "CMakeFiles/run.dir/src/main.cxx.o.d"
   "CMakeFiles/run.dir/src/shader_compiler.cxx.o"

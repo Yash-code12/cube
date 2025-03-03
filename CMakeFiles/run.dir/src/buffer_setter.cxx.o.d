@@ -1,5 +1,6 @@
-CMakeFiles/run.dir/src/main.cxx.o: \
-  /storage/emulated/0/C++\ projects/Cube/src/main.cxx \
+CMakeFiles/run.dir/src/buffer_setter.cxx.o: \
+  /storage/emulated/0/C++\ projects/Cube/src/buffer_setter.cxx \
+  /storage/emulated/0/C++\ projects/Cube/include/buffer_setter.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/GLES2/gl2.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/GLES2/gl2platform.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/KHR/khrplatform.h \
@@ -160,60 +161,4 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/bitset \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__bit_reference \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/vector \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__split_buffer \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/array \
-  /storage/emulated/0/C++\ projects/Cube/include/window_initializer.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_main.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_stdinc.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_config.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_platform.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/begin_code.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/close_code.h \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/inttypes.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/inttypes.h \
-  /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/inttypes.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/inttypes.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_assert.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_atomic.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_audio.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_error.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_endian.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/endian.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/sys/endian.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_mutex.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_thread.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_rwops.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_clipboard.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_cpuinfo.h \
-  /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/arm_neon.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_events.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_video.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_pixels.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_rect.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_surface.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_blendmode.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_keyboard.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_keycode.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_scancode.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_mouse.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_joystick.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_gamecontroller.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_quit.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_gesture.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_touch.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_filesystem.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_haptic.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_hints.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_loadso.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_log.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_messagebox.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_power.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_render.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_sensor.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_shape.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_system.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_timer.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_version.h \
-  /storage/emulated/0/C++\ projects/Cube/include/shader_compiler.h \
-  /storage/emulated/0/C++\ projects/Cube/include/buffer_setter.h
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__split_buffer

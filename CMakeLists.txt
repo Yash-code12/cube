@@ -15,6 +15,7 @@ add_executable(run
 src/main.cxx 
 src/window_initializer.cxx 
 src/shader_compiler.cxx 
+src/buffer_setter.cxx 
 )
 
 # Link libraries

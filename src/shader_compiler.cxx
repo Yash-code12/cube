@@ -85,25 +85,3 @@ GLuint makeProgram(std::string vertPath, std::string fragPath){
     
     return shaderProgram;
 }
-
-void makeQuad(const std::vector<GLfloat>& quadVertices, GLuint program) {
-    GLuint quadVBO;
-    glGenBuffers(1, &quadVBO);  
-    glBindBuffer(GL_ARRAY_BUFFER, quadVBO);
-    glBufferData(GL_ARRAY_BUFFER, quadVertices.size() * sizeof(GLfloat), quadVertices.data(), GL_STATIC_DRAW);
-
-    glUseProgram(program);  // Activate shader program
-
-    // Get attribute locations
-    GLint posAttrib = glGetAttribLocation(program, "position");
-    //GLint texAttrib = glGetAttribLocation(program, "texCoord");
-
-    // Enable and set up attributes
-    glEnableVertexAttribArray(posAttrib);
-    //glEnableVertexAttribArray(texAttrib);
-
-    glVertexAttribPointer(posAttrib, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (GLvoid*)0);
-    //glVertexAttribPointer(texAttrib, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (GLvoid*)(3 * sizeof(GLfloat)));
-
-    glBindBuffer(GL_ARRAY_BUFFER, 0); // Unbind VBO
-}

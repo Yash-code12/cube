@@ -128,6 +128,30 @@ run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
+src/buffer_setter.o: src/buffer_setter.cxx.o
+.PHONY : src/buffer_setter.o
+
+# target to build an object file
+src/buffer_setter.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buffer_setter.cxx.o
+.PHONY : src/buffer_setter.cxx.o
+
+src/buffer_setter.i: src/buffer_setter.cxx.i
+.PHONY : src/buffer_setter.i
+
+# target to preprocess a source file
+src/buffer_setter.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buffer_setter.cxx.i
+.PHONY : src/buffer_setter.cxx.i
+
+src/buffer_setter.s: src/buffer_setter.cxx.s
+.PHONY : src/buffer_setter.s
+
+# target to generate assembly for a file
+src/buffer_setter.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buffer_setter.cxx.s
+.PHONY : src/buffer_setter.cxx.s
+
 src/main.o: src/main.cxx.o
 .PHONY : src/main.o
 
@@ -209,6 +233,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... run"
+	@echo "... src/buffer_setter.o"
+	@echo "... src/buffer_setter.i"
+	@echo "... src/buffer_setter.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

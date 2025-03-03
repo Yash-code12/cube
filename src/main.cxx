@@ -1,20 +1,19 @@
 #include <GLES2/gl2.h>
 #include <iostream>
 #include <vector>
+#include <array>
 
 #include "window_initializer.h"
 #include "shader_compiler.h"
+#include "buffer_setter.h"
 
 using namespace std;
 
-vector<GLfloat> quadVertices = {
+vector<GLfloat> triVertices = {
     // Positions, Texture Coordinates
     -1.0f,  1.0f,  0.0f,  0.0f, 1.0f,  // Top-left
     -1.0f, -1.0f,  0.0f,  0.0f, 0.0f,  // Bottom-left
-     1.0f, -1.0f,  0.0f,  1.0f, 0.0f,  // Bottom-right
-    -1.0f,  1.0f,  0.0f,  0.0f, 1.0f,  // Top-left
-     1.0f, -1.0f,  0.0f,  1.0f, 0.0f,  // Bottom-right
-     1.0f,  1.0f,  0.0f,  1.0f, 1.0f   // Top-right
+     1.0f, -1.0f,  0.0f,  1.0f, 0.0f  // Bottom-right
 };
 
 int main(){
@@ -27,18 +26,18 @@ int main(){
         return -1;
     }
     cout << "Width: " << width << ", " << "Height: " << height << "\n";
-    glViewport(0, 0, width, height);  // width and height from SDL window
+    //glViewport(0, 0, width, height);  // width and height from SDL window
     
     GLuint program = makeProgram("shaders/vert.glsl", "shaders/frag.glsl");
     if(program == -1){
         cleanup(window, context);
         return -1;
     }
+    GLuint screensizeUniform = glGetUniformLocation(program, "screensize");
+    
+    TriangleVBO(triVertices, program);
     
     float bgColor[4] = {0.0f,0.0f,0.0f,1.0f};
-    
-    makeQuad(quadVertices, program);
-    
     SDL_Event event;
     bool running = true;
     while (running) {
@@ -50,11 +49,12 @@ int main(){
         
         glUseProgram(program);
         
+        glUniform2f(screensizeUniform, (float)width, (float)height);
+        
         glClearColor(bgColor[0], bgColor[1], bgColor[2], bgColor[3]);
         glClear(GL_COLOR_BUFFER_BIT);
         
-        // Draw the quad
-        glDrawArrays(GL_TRIANGLES, 0, 6);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
         
         SDL_GL_SwapWindow(window);
     }
