@@ -176,6 +176,30 @@ src/main.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/main.cxx.s
 .PHONY : src/main.cxx.s
 
+src/projection_matrix.o: src/projection_matrix.cxx.o
+.PHONY : src/projection_matrix.o
+
+# target to build an object file
+src/projection_matrix.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/projection_matrix.cxx.o
+.PHONY : src/projection_matrix.cxx.o
+
+src/projection_matrix.i: src/projection_matrix.cxx.i
+.PHONY : src/projection_matrix.i
+
+# target to preprocess a source file
+src/projection_matrix.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/projection_matrix.cxx.i
+.PHONY : src/projection_matrix.cxx.i
+
+src/projection_matrix.s: src/projection_matrix.cxx.s
+.PHONY : src/projection_matrix.s
+
+# target to generate assembly for a file
+src/projection_matrix.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/projection_matrix.cxx.s
+.PHONY : src/projection_matrix.cxx.s
+
 src/shader_compiler.o: src/shader_compiler.cxx.o
 .PHONY : src/shader_compiler.o
 
@@ -239,6 +263,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/projection_matrix.o"
+	@echo "... src/projection_matrix.i"
+	@echo "... src/projection_matrix.s"
 	@echo "... src/shader_compiler.o"
 	@echo "... src/shader_compiler.i"
 	@echo "... src/shader_compiler.s"
