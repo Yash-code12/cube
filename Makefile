@@ -200,6 +200,30 @@ src/projection_matrix.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/projection_matrix.cxx.s
 .PHONY : src/projection_matrix.cxx.s
 
+src/quad.o: src/quad.cxx.o
+.PHONY : src/quad.o
+
+# target to build an object file
+src/quad.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/quad.cxx.o
+.PHONY : src/quad.cxx.o
+
+src/quad.i: src/quad.cxx.i
+.PHONY : src/quad.i
+
+# target to preprocess a source file
+src/quad.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/quad.cxx.i
+.PHONY : src/quad.cxx.i
+
+src/quad.s: src/quad.cxx.s
+.PHONY : src/quad.s
+
+# target to generate assembly for a file
+src/quad.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/quad.cxx.s
+.PHONY : src/quad.cxx.s
+
 src/shader_compiler.o: src/shader_compiler.cxx.o
 .PHONY : src/shader_compiler.o
 
@@ -266,6 +290,9 @@ help:
 	@echo "... src/projection_matrix.o"
 	@echo "... src/projection_matrix.i"
 	@echo "... src/projection_matrix.s"
+	@echo "... src/quad.o"
+	@echo "... src/quad.i"
+	@echo "... src/quad.s"
 	@echo "... src/shader_compiler.o"
 	@echo "... src/shader_compiler.i"
 	@echo "... src/shader_compiler.s"

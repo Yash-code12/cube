@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/storage/emulated/0/C++ projects/Cube/src/buffer_setter.cxx" "CMakeFiles/run.dir/src/buffer_setter.cxx.o" "gcc" "CMakeFiles/run.dir/src/buffer_setter.cxx.o.d"
   "/storage/emulated/0/C++ projects/Cube/src/main.cxx" "CMakeFiles/run.dir/src/main.cxx.o" "gcc" "CMakeFiles/run.dir/src/main.cxx.o.d"
   "/storage/emulated/0/C++ projects/Cube/src/projection_matrix.cxx" "CMakeFiles/run.dir/src/projection_matrix.cxx.o" "gcc" "CMakeFiles/run.dir/src/projection_matrix.cxx.o.d"
+  "/storage/emulated/0/C++ projects/Cube/src/quad.cxx" "CMakeFiles/run.dir/src/quad.cxx.o" "gcc" "CMakeFiles/run.dir/src/quad.cxx.o.d"
   "/storage/emulated/0/C++ projects/Cube/src/shader_compiler.cxx" "CMakeFiles/run.dir/src/shader_compiler.cxx.o" "gcc" "CMakeFiles/run.dir/src/shader_compiler.cxx.o.d"
   "/storage/emulated/0/C++ projects/Cube/src/window_initializer.cxx" "CMakeFiles/run.dir/src/window_initializer.cxx.o" "gcc" "CMakeFiles/run.dir/src/window_initializer.cxx.o.d"
   )

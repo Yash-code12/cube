@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/run.dir/src/main.cxx.o.d"
   "CMakeFiles/run.dir/src/projection_matrix.cxx.o"
   "CMakeFiles/run.dir/src/projection_matrix.cxx.o.d"
+  "CMakeFiles/run.dir/src/quad.cxx.o"
+  "CMakeFiles/run.dir/src/quad.cxx.o.d"
   "CMakeFiles/run.dir/src/shader_compiler.cxx.o"
   "CMakeFiles/run.dir/src/shader_compiler.cxx.o.d"
   "CMakeFiles/run.dir/src/window_initializer.cxx.o"
