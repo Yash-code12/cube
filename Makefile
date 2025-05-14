@@ -152,6 +152,30 @@ src/buffer_setter.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buffer_setter.cxx.s
 .PHONY : src/buffer_setter.cxx.s
 
+src/image_loader.o: src/image_loader.cxx.o
+.PHONY : src/image_loader.o
+
+# target to build an object file
+src/image_loader.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/image_loader.cxx.o
+.PHONY : src/image_loader.cxx.o
+
+src/image_loader.i: src/image_loader.cxx.i
+.PHONY : src/image_loader.i
+
+# target to preprocess a source file
+src/image_loader.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/image_loader.cxx.i
+.PHONY : src/image_loader.cxx.i
+
+src/image_loader.s: src/image_loader.cxx.s
+.PHONY : src/image_loader.s
+
+# target to generate assembly for a file
+src/image_loader.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/image_loader.cxx.s
+.PHONY : src/image_loader.cxx.s
+
 src/main.o: src/main.cxx.o
 .PHONY : src/main.o
 
@@ -176,29 +200,29 @@ src/main.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/main.cxx.s
 .PHONY : src/main.cxx.s
 
-src/projection_matrix.o: src/projection_matrix.cxx.o
-.PHONY : src/projection_matrix.o
+src/matrices.o: src/matrices.cxx.o
+.PHONY : src/matrices.o
 
 # target to build an object file
-src/projection_matrix.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/projection_matrix.cxx.o
-.PHONY : src/projection_matrix.cxx.o
+src/matrices.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrices.cxx.o
+.PHONY : src/matrices.cxx.o
 
-src/projection_matrix.i: src/projection_matrix.cxx.i
-.PHONY : src/projection_matrix.i
+src/matrices.i: src/matrices.cxx.i
+.PHONY : src/matrices.i
 
 # target to preprocess a source file
-src/projection_matrix.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/projection_matrix.cxx.i
-.PHONY : src/projection_matrix.cxx.i
+src/matrices.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrices.cxx.i
+.PHONY : src/matrices.cxx.i
 
-src/projection_matrix.s: src/projection_matrix.cxx.s
-.PHONY : src/projection_matrix.s
+src/matrices.s: src/matrices.cxx.s
+.PHONY : src/matrices.s
 
 # target to generate assembly for a file
-src/projection_matrix.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/projection_matrix.cxx.s
-.PHONY : src/projection_matrix.cxx.s
+src/matrices.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrices.cxx.s
+.PHONY : src/matrices.cxx.s
 
 src/quad.o: src/quad.cxx.o
 .PHONY : src/quad.o
@@ -284,12 +308,15 @@ help:
 	@echo "... src/buffer_setter.o"
 	@echo "... src/buffer_setter.i"
 	@echo "... src/buffer_setter.s"
+	@echo "... src/image_loader.o"
+	@echo "... src/image_loader.i"
+	@echo "... src/image_loader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/projection_matrix.o"
-	@echo "... src/projection_matrix.i"
-	@echo "... src/projection_matrix.s"
+	@echo "... src/matrices.o"
+	@echo "... src/matrices.i"
+	@echo "... src/matrices.s"
 	@echo "... src/quad.o"
 	@echo "... src/quad.i"
 	@echo "... src/quad.s"

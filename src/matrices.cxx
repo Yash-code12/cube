@@ -2,7 +2,7 @@
 #include <cmath>
 #define PI 3.1415926538f
 #include <iostream>
-void SetProjectionMatrix(GLuint program, GLuint projLoc, float width, float height) {
+void setProjectionMatrix(GLuint program, GLuint projLoc, float width, float height) {
     float fov = (60.0f / 180.0f) * PI;
     float n = 1.0f;
     float f = 100.0f;

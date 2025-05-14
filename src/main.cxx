@@ -2,12 +2,14 @@
 #include <iostream>
 #include <vector>
 #include <array>
+#include <chrono>
 
 #include "window_initializer.h"
 #include "shader_compiler.h"
 #include "buffer_setter.h"
-#include "projection_matrix.h"
+#include "matrices.h"
 #include "quad.h"
+#include "image_loader.h"
 
 using namespace std;
 /*
@@ -41,20 +43,21 @@ vector<GLfloat> v2 = {
 };
 */
 vector<GLfloat> v = {
-    -1.0f, -1.0f, 5.0f,
-    1.0f, -1.0f, 5.0f,
-    1.0f, 1.0f, 5.0f,
-    -1.0f, 1.0f, 5.0f,
-    -1.0f, -1.0f, 6.0f,
-    1.0f, -1.0f, 6.0f,
-    1.0f, 1.0f, 6.0f,
-    -1.0f, 1.0f, 6.0f
+    -1.0f, -1.0f, 10.0f,
+    1.0f, -1.0f, 10.0f,
+    1.0f, 1.0f, 10.0f,
+    -1.0f, 1.0f, 10.0f,
+    -1.0f, -1.0f, 11.0f,
+    1.0f, -1.0f, 11.0f,
+    1.0f, 1.0f, 11.0f,
+    -1.0f, 1.0f, 11.0f
 };
 
 vector<GLfloat> vertices;
 
 int main(){
     vertices = makeCube(v);
+    
     SDL_Window* window = nullptr;
     SDL_GLContext context = nullptr;
     int width, height;
@@ -78,14 +81,23 @@ int main(){
     
     GLuint screensizeUniform = glGetUniformLocation(program, "screensize");
     
+    GLuint timeUniform = glGetUniformLocation(program, "u_time");
+    
+    GLuint textureID = loadTexture("assets/square.png");
+    
+    GLint texCoordLocation = glGetAttribLocation(program, "a_textureCoord");
+    GLint samplerLocation = glGetUniformLocation(program, "u_textureSampler");
+    
     GLuint projLoc = glGetUniformLocation(program, "projMtx");
-    SetProjectionMatrix(program, projLoc, float(width), float(height));
+    setProjectionMatrix(program, projLoc, float(width), float(height));
     
     TriangleVBO(vertices, program);
     
     float bgColor[4] = {0.0f,0.0f,0.0f,1.0f};
     SDL_Event event;
     bool running = true;
+    
+    auto start_time = chrono::high_resolution_clock::now();
     while (running) {
         while (SDL_PollEvent(&event)) {
             if (event.type == SDL_QUIT) {
@@ -96,6 +108,17 @@ int main(){
         glUseProgram(program);
         
         glUniform2f(screensizeUniform, (float)width, (float)height);
+        
+        auto end_time = chrono::high_resolution_clock::now();
+        auto duration = (std::chrono::duration<float>(end_time - start_time).count());
+        duration *= 5;
+        cout << duration << "\n";
+        glUniform1f(timeUniform, duration);
+        
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, textureID);
+        
+        glUniform1i(samplerLocation, 0);
         
         glClearColor(bgColor[0], bgColor[1], bgColor[2], bgColor[3]);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

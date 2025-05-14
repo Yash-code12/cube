@@ -10,7 +10,7 @@ void TriangleVBO(std::vector<GLfloat> vertices, GLuint program){
     glUseProgram(program);
     
     GLuint posAttrib = glGetAttribLocation(program, "position");
-    GLuint texAttrib = glGetAttribLocation(program, "texCoord");
+    GLuint texAttrib = glGetAttribLocation(program, "a_textureCoord");
     
     glEnableVertexAttribArray(posAttrib);
     glEnableVertexAttribArray(texAttrib);

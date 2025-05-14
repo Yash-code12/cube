@@ -1,5 +1,6 @@
-CMakeFiles/run.dir/src/main.cxx.o: \
-  /storage/emulated/0/C++\ projects/Cube/src/main.cxx \
+CMakeFiles/run.dir/src/matrices.cxx.o: \
+  /storage/emulated/0/C++\ projects/Cube/src/matrices.cxx \
+  /storage/emulated/0/C++\ projects/Cube/include/matrices.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/GLES2/gl2.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/GLES2/gl2platform.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/KHR/khrplatform.h \
@@ -19,12 +20,15 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/stddef.h \
   /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/__stddef_max_align_t.h \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__nullptr \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/iostream \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/ios \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/iosfwd \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/wchar.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/wchar.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/wchar.h \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/cmath \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/math.h \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/stdlib.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/stdlib.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/stdlib.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/alloca.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/wait.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/linux/wait.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/malloc.h \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/stdio.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/stdio.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/stdio.h \
@@ -45,6 +49,28 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/stdarg.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/seek_constants.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/struct_file.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/xlocale.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/android/legacy_stdlib_inlines.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/math.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/math.h \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/limits.h \
+  /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/limits.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/limits.h \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/float.h \
+  /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/float.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/linux/limits.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/posix_limits.h \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/type_traits \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/cstddef \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/version \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/limits \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__undef_macros \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/iostream \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/ios \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/iosfwd \
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/wchar.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/wchar.h \
+  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/wchar.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/time.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/sys/time.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/linux/time.h \
@@ -54,13 +80,6 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/aarch64-linux-android/asm/sigcontext.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/aarch64-linux-android/asm/sve_context.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/signal_types.h \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/limits.h \
-  /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/limits.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/limits.h \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/float.h \
-  /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/float.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/linux/limits.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/posix_limits.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/linux/signal.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/aarch64-linux-android/asm/signal.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/asm-generic/signal.h \
@@ -71,7 +90,6 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/sys/ucontext.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/sys/user.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/android/legacy_signal_inlines.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/xlocale.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/mbstate_t.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/wctype.h \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__locale \
@@ -80,9 +98,6 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__string \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/algorithm \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/initializer_list \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/cstddef \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/version \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/type_traits \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/cstring \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/string.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/string.h \
@@ -96,19 +111,6 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/typeinfo \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/exception \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/cstdlib \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/stdlib.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/stdlib.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/stdlib.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/alloca.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/bits/wait.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/linux/wait.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/malloc.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/android/legacy_stdlib_inlines.h \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/math.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/math.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/math.h \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/limits \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__undef_macros \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/new \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/iterator \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__functional_base \
@@ -158,65 +160,4 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/cstdarg \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__bsd_locale_fallbacks.h \
   /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/bitset \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__bit_reference \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/vector \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__split_buffer \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/array \
-  /storage/emulated/0/C++\ projects/Cube/include/window_initializer.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_main.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_stdinc.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_config.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_platform.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/begin_code.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/close_code.h \
-  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/inttypes.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/local/include/inttypes.h \
-  /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/inttypes.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/inttypes.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_assert.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_atomic.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_audio.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_error.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_endian.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/endian.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/usr/include/sys/endian.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_mutex.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_thread.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_rwops.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_clipboard.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_cpuinfo.h \
-  /data/data/ru.iiec.cxxdroid/files/lib/clang/9.0.1/include/arm_neon.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_events.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_video.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_pixels.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_rect.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_surface.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_blendmode.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_keyboard.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_keycode.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_scancode.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_mouse.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_joystick.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_gamecontroller.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_quit.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_gesture.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_touch.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_filesystem.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_haptic.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_hints.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_loadso.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_log.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_messagebox.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_power.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_render.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_sensor.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_shape.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_system.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_timer.h \
-  /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_version.h \
-  /storage/emulated/0/C++\ projects/Cube/include/shader_compiler.h \
-  /storage/emulated/0/C++\ projects/Cube/include/buffer_setter.h \
-  /storage/emulated/0/C++\ projects/Cube/include/matrices.h \
-  /storage/emulated/0/C++\ projects/Cube/include/quad.h \
-  /storage/emulated/0/C++\ projects/Cube/include/image_loader.h
+  /data/user/0/ru.iiec.cxxdroid/files/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/__bit_reference

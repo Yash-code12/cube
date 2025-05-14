@@ -15,8 +15,9 @@ src/main.cxx
 src/window_initializer.cxx 
 src/shader_compiler.cxx 
 src/buffer_setter.cxx 
-src/projection_matrix.cxx 
+src/matrices.cxx 
 src/quad.cxx 
+src/image_loader.cxx
 )
 
 # Link libraries

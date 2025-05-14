@@ -6,13 +6,15 @@ using namespace std;
 //make 2 tri (face) from 4 vertices
 //vertex ex:- [x,y,z]
 //start is bottom left
+//c-clockwise
 vector<GLfloat> makeQuad(vector<GLfloat> v){
     vector<vector<int>> a = {
-        {0,1,3}, {2,1,3}
+        {0,1,3}, //Tri1 vertices BL, BR, TL
+        {2,1,3} //Tri2 vertices TR, BR, TL
     };
     vector<vector<vector<GLfloat>>> b = {
-        {{-1.0f,-1.0f},{1.0f,-1.0f},{-1.0f,1.0f}},
-        {{1.0f,1.0f},{1.0f,-1.0f},{-1.0f,1.0f}}
+        {{0.0f,0.0f},{1.0f,0.0f},{0.0f,1.0f}},
+        {{1.0f,1.0f},{1.0f,0.0f},{0.0f,1.0f}}
     };
     vector<GLfloat> tri1;
     vector<GLfloat> tri2;
