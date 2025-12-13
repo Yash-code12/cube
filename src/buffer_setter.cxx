@@ -12,11 +12,17 @@ void TriangleVBO(std::vector<GLfloat> vertices, GLuint program){
     GLuint posAttrib = glGetAttribLocation(program, "position");
     GLuint texAttrib = glGetAttribLocation(program, "a_textureCoord");
     
-    glEnableVertexAttribArray(posAttrib);
-    glEnableVertexAttribArray(texAttrib);
+    constexpr int STRIDE = 5 * sizeof(float);
     
-    glVertexAttribPointer(posAttrib, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
-    glVertexAttribPointer(texAttrib, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3*sizeof(float)));
+    if(posAttrib != -1){
+        glEnableVertexAttribArray(posAttrib);
+        glVertexAttribPointer(posAttrib, 3, GL_FLOAT, GL_FALSE, STRIDE, (void*)0);
+    }
+    
+    if(texAttrib != -1){
+        glEnableVertexAttribArray(texAttrib);
+        glVertexAttribPointer(texAttrib, 2, GL_FLOAT, GL_FALSE, STRIDE, (void*)(3*sizeof(float)));
+    }
     
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 }

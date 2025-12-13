@@ -7,12 +7,11 @@ varying vec2 v_texCoord;
 uniform float u_time;
 uniform vec2 screensize;
 uniform mat4 projMtx;
+uniform mat4 viewMtx;
+uniform mat4 rotMtx;
 
 void main(){
     vec4 pos = position;
-    pos.x += cos(u_time);
-    pos.y += sin(u_time);
-
-    gl_Position = pos * projMtx;
+    gl_Position = projMtx * viewMtx* rotMtx * pos;
     v_texCoord = a_textureCoord;
 }

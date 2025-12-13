@@ -12,51 +12,30 @@
 #include "image_loader.h"
 
 using namespace std;
-/*
-vector<GLfloat> v1 = {
-    // Positions, Texture Coordinates
-    -1.0f,  1.0f,  5.0f,  0.0f, 1.0f,  // Top-left
-    -1.0f, -1.0f,  5.0f,  0.0f, 0.0f,  // Bottom-left
-     1.0f, -1.0f, 5.0f,  1.0f, 0.0f  // Bottom-right
-};
 
-vector<GLfloat> v2 = {
-    // Positions, Texture Coordinates
-    -1.0f,  1.0f, 5.0f,  0.0f, 1.0f,  // Top-left
-    1.0f, 1.0f,  5.0f,  0.0f, 0.0f,  // Top-right
-     1.0f, -1.0f,  5.0f,  1.0f, 0.0f  // Bottom-right
-};
-*/
-/*
 vector<GLfloat> v = {
-    -1.0f, -1.0f, 5.0f,
-    1.0f, -1.0f, 5.0f,
-    1.0f, 1.0f, 5.0f,
-    -1.0f, 1.0f, 5.0f
+    -0.5f, -0.5f, -5.0f,
+    0.5f, -0.5f, -5.0f,
+    0.5f, 0.5f, -5.0f,
+    -0.5f, 0.5f, -5.0f,
+    -0.5f, -0.5f, -6.0f,
+    0.5f, -0.5f, -6.0f,
+    0.5f, 0.5f, -6.0f,
+    -0.5f, 0.5f, -6.0f
+};
+//test triangle
+vector<GLfloat> test = {
+    -1, -1, -10, 0, 0,
+     1, -1, -10, 1, 0,
+     0,  1, -10, 0.5, 1
 };
 
-vector<GLfloat> v2 = {
-    -1.0f, -1.0f, 10.0f,
-    1.0f, -1.0f, 10.0f,
-    1.0f, 1.0f, 10.0f,
-    -1.0f, 1.0f, 10.0f
-};
-*/
-vector<GLfloat> v = {
-    -1.0f, -1.0f, 10.0f,
-    1.0f, -1.0f, 10.0f,
-    1.0f, 1.0f, 10.0f,
-    -1.0f, 1.0f, 10.0f,
-    -1.0f, -1.0f, 11.0f,
-    1.0f, -1.0f, 11.0f,
-    1.0f, 1.0f, 11.0f,
-    -1.0f, 1.0f, 11.0f
-};
+vector<GLfloat> cube;
 
-vector<GLfloat> vertices;
+//add a way to move camera and rotate it with inputs
 
 int main(){
-    vertices = makeCube(v);
+    cube = makeCube(v);
     
     SDL_Window* window = nullptr;
     SDL_GLContext context = nullptr;
@@ -69,8 +48,16 @@ int main(){
     cout << "Width: " << width << ", " << "Height: " << height << "\n";
     glViewport(0, 0, width, height);  // width and height from SDL window
     
+    //only draw pixel closest to camera
     glEnable(GL_DEPTH_TEST);
-    glDepthFunc(GL_LESS); // Standard depth comparison
+    //pass the depth test if new fragment is closer
+    glDepthFunc(GL_LESS);
+    //dont render triangles facing away from camera
+    glEnable(GL_CULL_FACE);
+    //triangles vertices using counter-clockwise order is considered the front
+    glFrontFace(GL_CCW);
+    //discard back faces, draw front faces
+    glCullFace(GL_BACK);
     
     GLuint program = makeProgram("shaders/vert.glsl", "shaders/frag.glsl");
     if(program == -1){
@@ -88,15 +75,24 @@ int main(){
     GLint texCoordLocation = glGetAttribLocation(program, "a_textureCoord");
     GLint samplerLocation = glGetUniformLocation(program, "u_textureSampler");
     
-    GLuint projLoc = glGetUniformLocation(program, "projMtx");
+    GLuint projLoc = glGetUniformLocation(program, "projMtx");    GLuint viewLoc = glGetUniformLocation(program, "viewMtx");
+    GLuint rotLoc = glGetUniformLocation(program, "rotMtx");
+    
     setProjectionMatrix(program, projLoc, float(width), float(height));
     
-    TriangleVBO(vertices, program);
+    vector<float> camPos = {0.0f, 0.0f, 0.0f};
+    vector<float> camRot = {0.0f, 0.0f, 0.0f};
+    
+    setViewMatrix(program, viewLoc, camPos[0], camPos[1], camPos[2]);
+    setRotMatrix(program, rotLoc, camRot[0], camRot[1], camRot[2]);
+    
+    TriangleVBO(cube, program);
     
     float bgColor[4] = {0.0f,0.0f,0.0f,1.0f};
     SDL_Event event;
     bool running = true;
     
+    int dir = -1;
     auto start_time = chrono::high_resolution_clock::now();
     while (running) {
         while (SDL_PollEvent(&event)) {
@@ -111,9 +107,19 @@ int main(){
         
         auto end_time = chrono::high_resolution_clock::now();
         auto duration = (std::chrono::duration<float>(end_time - start_time).count());
+        start_time = end_time;
         duration *= 5;
         cout << duration << "\n";
         glUniform1f(timeUniform, duration);
+        
+        //rotate camera with time
+        camRot[0] += dir*(duration/5);
+        float cap = 2.0f;
+        if(camRot[0] > cap || camRot[0] < -cap){
+            dir *= -1;
+        }
+        setViewMatrix(program, viewLoc, camPos[0], camPos[1], camPos[2]);
+        setRotMatrix(program, rotLoc, camRot[0], camRot[1], camRot[2]);
         
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, textureID);
@@ -124,7 +130,7 @@ int main(){
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
         //last arg is total vertices (count)
-        glDrawArrays(GL_TRIANGLES, 0, vertices.size()/5);
+        glDrawArrays(GL_TRIANGLES, 0, cube.size()/5);
         
         SDL_GL_SwapWindow(window);
     }
