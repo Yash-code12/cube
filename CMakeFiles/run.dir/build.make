@@ -110,52 +110,38 @@ CMakeFiles/run.dir/src/shader_compiler.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/shader_compiler.cxx.s"
 	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/shader_compiler.cxx" -o CMakeFiles/run.dir/src/shader_compiler.cxx.s
 
-CMakeFiles/run.dir/src/buffer_setter.cxx.o: CMakeFiles/run.dir/flags.make
-CMakeFiles/run.dir/src/buffer_setter.cxx.o: src/buffer_setter.cxx
-CMakeFiles/run.dir/src/buffer_setter.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/run.dir/src/buffer_setter.cxx.o"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/buffer_setter.cxx.o -MF CMakeFiles/run.dir/src/buffer_setter.cxx.o.d -o CMakeFiles/run.dir/src/buffer_setter.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/buffer_setter.cxx"
+CMakeFiles/run.dir/src/world_matrices.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/world_matrices.cxx.o: src/world_matrices.cxx
+CMakeFiles/run.dir/src/world_matrices.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/run.dir/src/world_matrices.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/world_matrices.cxx.o -MF CMakeFiles/run.dir/src/world_matrices.cxx.o.d -o CMakeFiles/run.dir/src/world_matrices.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/world_matrices.cxx"
 
-CMakeFiles/run.dir/src/buffer_setter.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/buffer_setter.cxx.i"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/buffer_setter.cxx" > CMakeFiles/run.dir/src/buffer_setter.cxx.i
+CMakeFiles/run.dir/src/world_matrices.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/world_matrices.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/world_matrices.cxx" > CMakeFiles/run.dir/src/world_matrices.cxx.i
 
-CMakeFiles/run.dir/src/buffer_setter.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/buffer_setter.cxx.s"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/buffer_setter.cxx" -o CMakeFiles/run.dir/src/buffer_setter.cxx.s
+CMakeFiles/run.dir/src/world_matrices.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/world_matrices.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/world_matrices.cxx" -o CMakeFiles/run.dir/src/world_matrices.cxx.s
 
-CMakeFiles/run.dir/src/matrices.cxx.o: CMakeFiles/run.dir/flags.make
-CMakeFiles/run.dir/src/matrices.cxx.o: src/matrices.cxx
-CMakeFiles/run.dir/src/matrices.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/run.dir/src/matrices.cxx.o"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/matrices.cxx.o -MF CMakeFiles/run.dir/src/matrices.cxx.o.d -o CMakeFiles/run.dir/src/matrices.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/matrices.cxx"
+CMakeFiles/run.dir/src/cube_generator.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/cube_generator.cxx.o: src/cube_generator.cxx
+CMakeFiles/run.dir/src/cube_generator.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/run.dir/src/cube_generator.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/cube_generator.cxx.o -MF CMakeFiles/run.dir/src/cube_generator.cxx.o.d -o CMakeFiles/run.dir/src/cube_generator.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/cube_generator.cxx"
 
-CMakeFiles/run.dir/src/matrices.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/matrices.cxx.i"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/matrices.cxx" > CMakeFiles/run.dir/src/matrices.cxx.i
+CMakeFiles/run.dir/src/cube_generator.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/cube_generator.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/cube_generator.cxx" > CMakeFiles/run.dir/src/cube_generator.cxx.i
 
-CMakeFiles/run.dir/src/matrices.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/matrices.cxx.s"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/matrices.cxx" -o CMakeFiles/run.dir/src/matrices.cxx.s
-
-CMakeFiles/run.dir/src/quad.cxx.o: CMakeFiles/run.dir/flags.make
-CMakeFiles/run.dir/src/quad.cxx.o: src/quad.cxx
-CMakeFiles/run.dir/src/quad.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/run.dir/src/quad.cxx.o"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/quad.cxx.o -MF CMakeFiles/run.dir/src/quad.cxx.o.d -o CMakeFiles/run.dir/src/quad.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/quad.cxx"
-
-CMakeFiles/run.dir/src/quad.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/quad.cxx.i"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/quad.cxx" > CMakeFiles/run.dir/src/quad.cxx.i
-
-CMakeFiles/run.dir/src/quad.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/quad.cxx.s"
-	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/quad.cxx" -o CMakeFiles/run.dir/src/quad.cxx.s
+CMakeFiles/run.dir/src/cube_generator.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/cube_generator.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/cube_generator.cxx" -o CMakeFiles/run.dir/src/cube_generator.cxx.s
 
 CMakeFiles/run.dir/src/image_loader.cxx.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/image_loader.cxx.o: src/image_loader.cxx
 CMakeFiles/run.dir/src/image_loader.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run.dir/src/image_loader.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/run.dir/src/image_loader.cxx.o"
 	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/image_loader.cxx.o -MF CMakeFiles/run.dir/src/image_loader.cxx.o.d -o CMakeFiles/run.dir/src/image_loader.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/image_loader.cxx"
 
 CMakeFiles/run.dir/src/image_loader.cxx.i: cmake_force
@@ -166,15 +152,134 @@ CMakeFiles/run.dir/src/image_loader.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/image_loader.cxx.s"
 	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/image_loader.cxx" -o CMakeFiles/run.dir/src/image_loader.cxx.s
 
+CMakeFiles/run.dir/src/chunk_generator.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/chunk_generator.cxx.o: src/chunk_generator.cxx
+CMakeFiles/run.dir/src/chunk_generator.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run.dir/src/chunk_generator.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/chunk_generator.cxx.o -MF CMakeFiles/run.dir/src/chunk_generator.cxx.o.d -o CMakeFiles/run.dir/src/chunk_generator.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/chunk_generator.cxx"
+
+CMakeFiles/run.dir/src/chunk_generator.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/chunk_generator.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/chunk_generator.cxx" > CMakeFiles/run.dir/src/chunk_generator.cxx.i
+
+CMakeFiles/run.dir/src/chunk_generator.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/chunk_generator.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/chunk_generator.cxx" -o CMakeFiles/run.dir/src/chunk_generator.cxx.s
+
+CMakeFiles/run.dir/src/camera.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/camera.cxx.o: src/camera.cxx
+CMakeFiles/run.dir/src/camera.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/run.dir/src/camera.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/camera.cxx.o -MF CMakeFiles/run.dir/src/camera.cxx.o.d -o CMakeFiles/run.dir/src/camera.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/camera.cxx"
+
+CMakeFiles/run.dir/src/camera.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/camera.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/camera.cxx" > CMakeFiles/run.dir/src/camera.cxx.i
+
+CMakeFiles/run.dir/src/camera.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/camera.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/camera.cxx" -o CMakeFiles/run.dir/src/camera.cxx.s
+
+CMakeFiles/run.dir/src/matrix_math.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/matrix_math.cxx.o: src/matrix_math.cxx
+CMakeFiles/run.dir/src/matrix_math.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/run.dir/src/matrix_math.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/matrix_math.cxx.o -MF CMakeFiles/run.dir/src/matrix_math.cxx.o.d -o CMakeFiles/run.dir/src/matrix_math.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/matrix_math.cxx"
+
+CMakeFiles/run.dir/src/matrix_math.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/matrix_math.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/matrix_math.cxx" > CMakeFiles/run.dir/src/matrix_math.cxx.i
+
+CMakeFiles/run.dir/src/matrix_math.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/matrix_math.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/matrix_math.cxx" -o CMakeFiles/run.dir/src/matrix_math.cxx.s
+
+CMakeFiles/run.dir/src/buttons.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/buttons.cxx.o: src/buttons.cxx
+CMakeFiles/run.dir/src/buttons.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/run.dir/src/buttons.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/buttons.cxx.o -MF CMakeFiles/run.dir/src/buttons.cxx.o.d -o CMakeFiles/run.dir/src/buttons.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/buttons.cxx"
+
+CMakeFiles/run.dir/src/buttons.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/buttons.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/buttons.cxx" > CMakeFiles/run.dir/src/buttons.cxx.i
+
+CMakeFiles/run.dir/src/buttons.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/buttons.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/buttons.cxx" -o CMakeFiles/run.dir/src/buttons.cxx.s
+
+CMakeFiles/run.dir/src/user_input.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/user_input.cxx.o: src/user_input.cxx
+CMakeFiles/run.dir/src/user_input.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/run.dir/src/user_input.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/user_input.cxx.o -MF CMakeFiles/run.dir/src/user_input.cxx.o.d -o CMakeFiles/run.dir/src/user_input.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/user_input.cxx"
+
+CMakeFiles/run.dir/src/user_input.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/user_input.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/user_input.cxx" > CMakeFiles/run.dir/src/user_input.cxx.i
+
+CMakeFiles/run.dir/src/user_input.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/user_input.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/user_input.cxx" -o CMakeFiles/run.dir/src/user_input.cxx.s
+
+CMakeFiles/run.dir/src/program_file.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/program_file.cxx.o: src/program_file.cxx
+CMakeFiles/run.dir/src/program_file.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/run.dir/src/program_file.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/program_file.cxx.o -MF CMakeFiles/run.dir/src/program_file.cxx.o.d -o CMakeFiles/run.dir/src/program_file.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/program_file.cxx"
+
+CMakeFiles/run.dir/src/program_file.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/program_file.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/program_file.cxx" > CMakeFiles/run.dir/src/program_file.cxx.i
+
+CMakeFiles/run.dir/src/program_file.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/program_file.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/program_file.cxx" -o CMakeFiles/run.dir/src/program_file.cxx.s
+
+CMakeFiles/run.dir/src/mesh_file.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/mesh_file.cxx.o: src/mesh_file.cxx
+CMakeFiles/run.dir/src/mesh_file.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/run.dir/src/mesh_file.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/mesh_file.cxx.o -MF CMakeFiles/run.dir/src/mesh_file.cxx.o.d -o CMakeFiles/run.dir/src/mesh_file.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/mesh_file.cxx"
+
+CMakeFiles/run.dir/src/mesh_file.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/mesh_file.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/mesh_file.cxx" > CMakeFiles/run.dir/src/mesh_file.cxx.i
+
+CMakeFiles/run.dir/src/mesh_file.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/mesh_file.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/mesh_file.cxx" -o CMakeFiles/run.dir/src/mesh_file.cxx.s
+
+CMakeFiles/run.dir/src/draw_functions.cxx.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/draw_functions.cxx.o: src/draw_functions.cxx
+CMakeFiles/run.dir/src/draw_functions.cxx.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/run.dir/src/draw_functions.cxx.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/draw_functions.cxx.o -MF CMakeFiles/run.dir/src/draw_functions.cxx.o.d -o CMakeFiles/run.dir/src/draw_functions.cxx.o -c "/storage/emulated/0/C++ projects/Cube/src/draw_functions.cxx"
+
+CMakeFiles/run.dir/src/draw_functions.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/draw_functions.cxx.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/emulated/0/C++ projects/Cube/src/draw_functions.cxx" > CMakeFiles/run.dir/src/draw_functions.cxx.i
+
+CMakeFiles/run.dir/src/draw_functions.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/draw_functions.cxx.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/emulated/0/C++ projects/Cube/src/draw_functions.cxx" -o CMakeFiles/run.dir/src/draw_functions.cxx.s
+
 # Object files for target run
 run_OBJECTS = \
 "CMakeFiles/run.dir/src/main.cxx.o" \
 "CMakeFiles/run.dir/src/window_initializer.cxx.o" \
 "CMakeFiles/run.dir/src/shader_compiler.cxx.o" \
-"CMakeFiles/run.dir/src/buffer_setter.cxx.o" \
-"CMakeFiles/run.dir/src/matrices.cxx.o" \
-"CMakeFiles/run.dir/src/quad.cxx.o" \
-"CMakeFiles/run.dir/src/image_loader.cxx.o"
+"CMakeFiles/run.dir/src/world_matrices.cxx.o" \
+"CMakeFiles/run.dir/src/cube_generator.cxx.o" \
+"CMakeFiles/run.dir/src/image_loader.cxx.o" \
+"CMakeFiles/run.dir/src/chunk_generator.cxx.o" \
+"CMakeFiles/run.dir/src/camera.cxx.o" \
+"CMakeFiles/run.dir/src/matrix_math.cxx.o" \
+"CMakeFiles/run.dir/src/buttons.cxx.o" \
+"CMakeFiles/run.dir/src/user_input.cxx.o" \
+"CMakeFiles/run.dir/src/program_file.cxx.o" \
+"CMakeFiles/run.dir/src/mesh_file.cxx.o" \
+"CMakeFiles/run.dir/src/draw_functions.cxx.o"
 
 # External object files for target run
 run_EXTERNAL_OBJECTS =
@@ -182,15 +287,22 @@ run_EXTERNAL_OBJECTS =
 run: CMakeFiles/run.dir/src/main.cxx.o
 run: CMakeFiles/run.dir/src/window_initializer.cxx.o
 run: CMakeFiles/run.dir/src/shader_compiler.cxx.o
-run: CMakeFiles/run.dir/src/buffer_setter.cxx.o
-run: CMakeFiles/run.dir/src/matrices.cxx.o
-run: CMakeFiles/run.dir/src/quad.cxx.o
+run: CMakeFiles/run.dir/src/world_matrices.cxx.o
+run: CMakeFiles/run.dir/src/cube_generator.cxx.o
 run: CMakeFiles/run.dir/src/image_loader.cxx.o
+run: CMakeFiles/run.dir/src/chunk_generator.cxx.o
+run: CMakeFiles/run.dir/src/camera.cxx.o
+run: CMakeFiles/run.dir/src/matrix_math.cxx.o
+run: CMakeFiles/run.dir/src/buttons.cxx.o
+run: CMakeFiles/run.dir/src/user_input.cxx.o
+run: CMakeFiles/run.dir/src/program_file.cxx.o
+run: CMakeFiles/run.dir/src/mesh_file.cxx.o
+run: CMakeFiles/run.dir/src/draw_functions.cxx.o
 run: CMakeFiles/run.dir/build.make
 run: /data/user/0/ru.iiec.cxxdroid/files/sysroot/lib/libSDL2main.a
 run: /data/user/0/ru.iiec.cxxdroid/files/sysroot/lib/libSDL2.a
 run: CMakeFiles/run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/storage/emulated/0/C++ projects/Cube/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable run"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

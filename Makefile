@@ -128,29 +128,125 @@ run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-src/buffer_setter.o: src/buffer_setter.cxx.o
-.PHONY : src/buffer_setter.o
+src/buttons.o: src/buttons.cxx.o
+.PHONY : src/buttons.o
 
 # target to build an object file
-src/buffer_setter.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buffer_setter.cxx.o
-.PHONY : src/buffer_setter.cxx.o
+src/buttons.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buttons.cxx.o
+.PHONY : src/buttons.cxx.o
 
-src/buffer_setter.i: src/buffer_setter.cxx.i
-.PHONY : src/buffer_setter.i
+src/buttons.i: src/buttons.cxx.i
+.PHONY : src/buttons.i
 
 # target to preprocess a source file
-src/buffer_setter.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buffer_setter.cxx.i
-.PHONY : src/buffer_setter.cxx.i
+src/buttons.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buttons.cxx.i
+.PHONY : src/buttons.cxx.i
 
-src/buffer_setter.s: src/buffer_setter.cxx.s
-.PHONY : src/buffer_setter.s
+src/buttons.s: src/buttons.cxx.s
+.PHONY : src/buttons.s
 
 # target to generate assembly for a file
-src/buffer_setter.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buffer_setter.cxx.s
-.PHONY : src/buffer_setter.cxx.s
+src/buttons.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/buttons.cxx.s
+.PHONY : src/buttons.cxx.s
+
+src/camera.o: src/camera.cxx.o
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/camera.cxx.o
+.PHONY : src/camera.cxx.o
+
+src/camera.i: src/camera.cxx.i
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/camera.cxx.i
+.PHONY : src/camera.cxx.i
+
+src/camera.s: src/camera.cxx.s
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/camera.cxx.s
+.PHONY : src/camera.cxx.s
+
+src/chunk_generator.o: src/chunk_generator.cxx.o
+.PHONY : src/chunk_generator.o
+
+# target to build an object file
+src/chunk_generator.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/chunk_generator.cxx.o
+.PHONY : src/chunk_generator.cxx.o
+
+src/chunk_generator.i: src/chunk_generator.cxx.i
+.PHONY : src/chunk_generator.i
+
+# target to preprocess a source file
+src/chunk_generator.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/chunk_generator.cxx.i
+.PHONY : src/chunk_generator.cxx.i
+
+src/chunk_generator.s: src/chunk_generator.cxx.s
+.PHONY : src/chunk_generator.s
+
+# target to generate assembly for a file
+src/chunk_generator.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/chunk_generator.cxx.s
+.PHONY : src/chunk_generator.cxx.s
+
+src/cube_generator.o: src/cube_generator.cxx.o
+.PHONY : src/cube_generator.o
+
+# target to build an object file
+src/cube_generator.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/cube_generator.cxx.o
+.PHONY : src/cube_generator.cxx.o
+
+src/cube_generator.i: src/cube_generator.cxx.i
+.PHONY : src/cube_generator.i
+
+# target to preprocess a source file
+src/cube_generator.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/cube_generator.cxx.i
+.PHONY : src/cube_generator.cxx.i
+
+src/cube_generator.s: src/cube_generator.cxx.s
+.PHONY : src/cube_generator.s
+
+# target to generate assembly for a file
+src/cube_generator.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/cube_generator.cxx.s
+.PHONY : src/cube_generator.cxx.s
+
+src/draw_functions.o: src/draw_functions.cxx.o
+.PHONY : src/draw_functions.o
+
+# target to build an object file
+src/draw_functions.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/draw_functions.cxx.o
+.PHONY : src/draw_functions.cxx.o
+
+src/draw_functions.i: src/draw_functions.cxx.i
+.PHONY : src/draw_functions.i
+
+# target to preprocess a source file
+src/draw_functions.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/draw_functions.cxx.i
+.PHONY : src/draw_functions.cxx.i
+
+src/draw_functions.s: src/draw_functions.cxx.s
+.PHONY : src/draw_functions.s
+
+# target to generate assembly for a file
+src/draw_functions.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/draw_functions.cxx.s
+.PHONY : src/draw_functions.cxx.s
 
 src/image_loader.o: src/image_loader.cxx.o
 .PHONY : src/image_loader.o
@@ -200,53 +296,77 @@ src/main.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/main.cxx.s
 .PHONY : src/main.cxx.s
 
-src/matrices.o: src/matrices.cxx.o
-.PHONY : src/matrices.o
+src/matrix_math.o: src/matrix_math.cxx.o
+.PHONY : src/matrix_math.o
 
 # target to build an object file
-src/matrices.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrices.cxx.o
-.PHONY : src/matrices.cxx.o
+src/matrix_math.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrix_math.cxx.o
+.PHONY : src/matrix_math.cxx.o
 
-src/matrices.i: src/matrices.cxx.i
-.PHONY : src/matrices.i
+src/matrix_math.i: src/matrix_math.cxx.i
+.PHONY : src/matrix_math.i
 
 # target to preprocess a source file
-src/matrices.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrices.cxx.i
-.PHONY : src/matrices.cxx.i
+src/matrix_math.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrix_math.cxx.i
+.PHONY : src/matrix_math.cxx.i
 
-src/matrices.s: src/matrices.cxx.s
-.PHONY : src/matrices.s
+src/matrix_math.s: src/matrix_math.cxx.s
+.PHONY : src/matrix_math.s
 
 # target to generate assembly for a file
-src/matrices.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrices.cxx.s
-.PHONY : src/matrices.cxx.s
+src/matrix_math.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/matrix_math.cxx.s
+.PHONY : src/matrix_math.cxx.s
 
-src/quad.o: src/quad.cxx.o
-.PHONY : src/quad.o
+src/mesh_file.o: src/mesh_file.cxx.o
+.PHONY : src/mesh_file.o
 
 # target to build an object file
-src/quad.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/quad.cxx.o
-.PHONY : src/quad.cxx.o
+src/mesh_file.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/mesh_file.cxx.o
+.PHONY : src/mesh_file.cxx.o
 
-src/quad.i: src/quad.cxx.i
-.PHONY : src/quad.i
+src/mesh_file.i: src/mesh_file.cxx.i
+.PHONY : src/mesh_file.i
 
 # target to preprocess a source file
-src/quad.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/quad.cxx.i
-.PHONY : src/quad.cxx.i
+src/mesh_file.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/mesh_file.cxx.i
+.PHONY : src/mesh_file.cxx.i
 
-src/quad.s: src/quad.cxx.s
-.PHONY : src/quad.s
+src/mesh_file.s: src/mesh_file.cxx.s
+.PHONY : src/mesh_file.s
 
 # target to generate assembly for a file
-src/quad.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/quad.cxx.s
-.PHONY : src/quad.cxx.s
+src/mesh_file.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/mesh_file.cxx.s
+.PHONY : src/mesh_file.cxx.s
+
+src/program_file.o: src/program_file.cxx.o
+.PHONY : src/program_file.o
+
+# target to build an object file
+src/program_file.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/program_file.cxx.o
+.PHONY : src/program_file.cxx.o
+
+src/program_file.i: src/program_file.cxx.i
+.PHONY : src/program_file.i
+
+# target to preprocess a source file
+src/program_file.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/program_file.cxx.i
+.PHONY : src/program_file.cxx.i
+
+src/program_file.s: src/program_file.cxx.s
+.PHONY : src/program_file.s
+
+# target to generate assembly for a file
+src/program_file.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/program_file.cxx.s
+.PHONY : src/program_file.cxx.s
 
 src/shader_compiler.o: src/shader_compiler.cxx.o
 .PHONY : src/shader_compiler.o
@@ -272,6 +392,30 @@ src/shader_compiler.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/shader_compiler.cxx.s
 .PHONY : src/shader_compiler.cxx.s
 
+src/user_input.o: src/user_input.cxx.o
+.PHONY : src/user_input.o
+
+# target to build an object file
+src/user_input.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/user_input.cxx.o
+.PHONY : src/user_input.cxx.o
+
+src/user_input.i: src/user_input.cxx.i
+.PHONY : src/user_input.i
+
+# target to preprocess a source file
+src/user_input.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/user_input.cxx.i
+.PHONY : src/user_input.cxx.i
+
+src/user_input.s: src/user_input.cxx.s
+.PHONY : src/user_input.s
+
+# target to generate assembly for a file
+src/user_input.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/user_input.cxx.s
+.PHONY : src/user_input.cxx.s
+
 src/window_initializer.o: src/window_initializer.cxx.o
 .PHONY : src/window_initializer.o
 
@@ -296,6 +440,30 @@ src/window_initializer.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/window_initializer.cxx.s
 .PHONY : src/window_initializer.cxx.s
 
+src/world_matrices.o: src/world_matrices.cxx.o
+.PHONY : src/world_matrices.o
+
+# target to build an object file
+src/world_matrices.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/world_matrices.cxx.o
+.PHONY : src/world_matrices.cxx.o
+
+src/world_matrices.i: src/world_matrices.cxx.i
+.PHONY : src/world_matrices.i
+
+# target to preprocess a source file
+src/world_matrices.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/world_matrices.cxx.i
+.PHONY : src/world_matrices.cxx.i
+
+src/world_matrices.s: src/world_matrices.cxx.s
+.PHONY : src/world_matrices.s
+
+# target to generate assembly for a file
+src/world_matrices.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/world_matrices.cxx.s
+.PHONY : src/world_matrices.cxx.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -305,27 +473,48 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... run"
-	@echo "... src/buffer_setter.o"
-	@echo "... src/buffer_setter.i"
-	@echo "... src/buffer_setter.s"
+	@echo "... src/buttons.o"
+	@echo "... src/buttons.i"
+	@echo "... src/buttons.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
+	@echo "... src/chunk_generator.o"
+	@echo "... src/chunk_generator.i"
+	@echo "... src/chunk_generator.s"
+	@echo "... src/cube_generator.o"
+	@echo "... src/cube_generator.i"
+	@echo "... src/cube_generator.s"
+	@echo "... src/draw_functions.o"
+	@echo "... src/draw_functions.i"
+	@echo "... src/draw_functions.s"
 	@echo "... src/image_loader.o"
 	@echo "... src/image_loader.i"
 	@echo "... src/image_loader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/matrices.o"
-	@echo "... src/matrices.i"
-	@echo "... src/matrices.s"
-	@echo "... src/quad.o"
-	@echo "... src/quad.i"
-	@echo "... src/quad.s"
+	@echo "... src/matrix_math.o"
+	@echo "... src/matrix_math.i"
+	@echo "... src/matrix_math.s"
+	@echo "... src/mesh_file.o"
+	@echo "... src/mesh_file.i"
+	@echo "... src/mesh_file.s"
+	@echo "... src/program_file.o"
+	@echo "... src/program_file.i"
+	@echo "... src/program_file.s"
 	@echo "... src/shader_compiler.o"
 	@echo "... src/shader_compiler.i"
 	@echo "... src/shader_compiler.s"
+	@echo "... src/user_input.o"
+	@echo "... src/user_input.i"
+	@echo "... src/user_input.s"
 	@echo "... src/window_initializer.o"
 	@echo "... src/window_initializer.i"
 	@echo "... src/window_initializer.s"
+	@echo "... src/world_matrices.o"
+	@echo "... src/world_matrices.i"
+	@echo "... src/world_matrices.s"
 .PHONY : help
 
 

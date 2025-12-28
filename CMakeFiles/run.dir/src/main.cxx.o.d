@@ -215,8 +215,12 @@ CMakeFiles/run.dir/src/main.cxx.o: \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_system.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_timer.h \
   /data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2/SDL_version.h \
-  /storage/emulated/0/C++\ projects/Cube/include/shader_compiler.h \
-  /storage/emulated/0/C++\ projects/Cube/include/buffer_setter.h \
-  /storage/emulated/0/C++\ projects/Cube/include/matrices.h \
-  /storage/emulated/0/C++\ projects/Cube/include/quad.h \
-  /storage/emulated/0/C++\ projects/Cube/include/image_loader.h
+  /storage/emulated/0/C++\ projects/Cube/include/world_matrices.h \
+  /storage/emulated/0/C++\ projects/Cube/include/camera.h \
+  /storage/emulated/0/C++\ projects/Cube/include/cube_generator.h \
+  /storage/emulated/0/C++\ projects/Cube/include/chunk_generator.h \
+  /storage/emulated/0/C++\ projects/Cube/include/buttons.h \
+  /storage/emulated/0/C++\ projects/Cube/include/mesh_file.h \
+  /storage/emulated/0/C++\ projects/Cube/include/program_file.h \
+  /storage/emulated/0/C++\ projects/Cube/include/user_input.h \
+  /storage/emulated/0/C++\ projects/Cube/include/draw_functions.h

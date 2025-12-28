@@ -16,22 +16,57 @@
 },
 {
   "directory": "/storage/emulated/0/C++ projects/Cube",
-  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/buffer_setter.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/buffer_setter.cxx\"",
-  "file": "/storage/emulated/0/C++ projects/Cube/src/buffer_setter.cxx"
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/world_matrices.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/world_matrices.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/world_matrices.cxx"
 },
 {
   "directory": "/storage/emulated/0/C++ projects/Cube",
-  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/matrices.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/matrices.cxx\"",
-  "file": "/storage/emulated/0/C++ projects/Cube/src/matrices.cxx"
-},
-{
-  "directory": "/storage/emulated/0/C++ projects/Cube",
-  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/quad.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/quad.cxx\"",
-  "file": "/storage/emulated/0/C++ projects/Cube/src/quad.cxx"
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/cube_generator.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/cube_generator.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/cube_generator.cxx"
 },
 {
   "directory": "/storage/emulated/0/C++ projects/Cube",
   "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/image_loader.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/image_loader.cxx\"",
   "file": "/storage/emulated/0/C++ projects/Cube/src/image_loader.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/chunk_generator.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/chunk_generator.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/chunk_generator.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/camera.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/camera.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/camera.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/matrix_math.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/matrix_math.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/matrix_math.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/buttons.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/buttons.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/buttons.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/user_input.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/user_input.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/user_input.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/program_file.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/program_file.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/program_file.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/mesh_file.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/mesh_file.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/mesh_file.cxx"
+},
+{
+  "directory": "/storage/emulated/0/C++ projects/Cube",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/data/user/0/ru.iiec.cxxdroid/files/sysroot/include/SDL2 -I\"/storage/emulated/0/C++ projects/Cube/include\" -I\"/storage/emulated/0/C++ projects/Cube/shaders\" -Wall -std=c++17 -fallow-void-main -o CMakeFiles/run.dir/src/draw_functions.cxx.o -c \"/storage/emulated/0/C++ projects/Cube/src/draw_functions.cxx\"",
+  "file": "/storage/emulated/0/C++ projects/Cube/src/draw_functions.cxx"
 }
 ]

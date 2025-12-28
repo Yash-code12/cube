@@ -14,10 +14,17 @@ add_executable(run
 src/main.cxx 
 src/window_initializer.cxx 
 src/shader_compiler.cxx 
-src/buffer_setter.cxx 
-src/matrices.cxx 
-src/quad.cxx 
-src/image_loader.cxx
+src/world_matrices.cxx 
+src/cube_generator.cxx 
+src/image_loader.cxx 
+src/chunk_generator.cxx 
+src/camera.cxx 
+src/matrix_math.cxx 
+src/buttons.cxx 
+src/user_input.cxx
+src/program_file.cxx
+src/mesh_file.cxx 
+src/draw_functions.cxx
 )
 
 # Link libraries

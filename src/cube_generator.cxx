@@ -1,4 +1,4 @@
-#include "quad.h"
+#include "cube_generator.h"
 #include <iostream>
 #include <vector>
 #include <GLES2/gl2.h>
@@ -68,7 +68,6 @@ vector<GLfloat> makeQuad(vector<GLfloat>& faceValues){
         
         //for every set of texCoords
         for(int j = 0; j < 2; ++j){
-            cout << "j = " << j << "\n";
             tri1.push_back(texCoords[0][i][j]);
             tri2.push_back(texCoords[1][i][j]);
         }
@@ -130,23 +129,36 @@ vector<GLfloat> makeCube(vector<GLfloat> vertices){
         }
         //append the result to cube
         face = makeQuad(face);
-        cout << "f2\n";
         for(auto i : face) cube.push_back(i);
-        cout << "f3\n";
     }
     return cube;
 }
 
 /*
 make 8 vertices of cube using 1 position
+position: [x, y, z], x,y,z are int
 vertex: [x, y, z]
 output:
 x1,y1,z1
 ...
 x8,y8,z8
 
+x1, y1, z1 are the input position
 
-vector<GLfloat> makeVertices(float pos){
-    
-}
+to move in x, y dir add and subtract for z
 */
+
+vector<GLfloat> makeVertices(float x, float y, float z){
+    vector<GLfloat> vertices = {
+        x,     y,      z,
+        x+1, y,      z,
+        x+1, y+1, z,
+        x, y+1,      z,
+        //repeat with z = z-1
+        x,     y,      z-1,
+        x+1, y,      z-1,
+        x+1, y+1, z-1,
+        x, y+1,      z-1
+    };
+    return vertices;
+}
