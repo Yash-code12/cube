@@ -30,17 +30,15 @@ void drawButton(const ProgramClass &program, const Button &button){
     
     glBindBuffer(GL_ARRAY_BUFFER, button.mesh.vbo);
     
-    float angle = 0.0f; //UP case
-    switch(button.use){
-        case(DOWN):
-            angle = 180.0f;
-            break;
-        case(LEFT):
-            angle = -90.0f;
-            break;
-        case(RIGHT):
+    float angle = 0.0f;
+    if(button.use == MOVE_FORWARD || button.use == MOVE_UP){
+        angle = 0.0f;
+    } else if(button.use == MOVE_BACK || button.use == MOVE_DOWN){
+        angle = 180.0f;
+    } else if(button.use == MOVE_LEFT){
+        angle = -90.0f;
+    } else if(button.use == MOVE_RIGHT){
         angle = 90.0f;
-            break;
     }
     
     Matrix4f model;

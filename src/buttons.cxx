@@ -58,10 +58,13 @@ Button::Button(int screen_width, int screen_height, float x_i, float y_i, float 
 bool Button::checkActivation(int pressedX, int pressedY){
     int leftEdge = x;
     int rightEdge = x + width;
-    int upEdge = y - height/2;
-    int downEdge = y + height/2;
+    int upEdge = y;
+    int downEdge = y + height;
     
-    if(pressedX > leftEdge && pressedX < rightEdge && pressedY > upEdge && pressedY < downEdge){
+    if(pressedX > leftEdge && 
+    pressedX < rightEdge && 
+    pressedY > upEdge && 
+    pressedY < downEdge){
         return true;
     }
     return false;

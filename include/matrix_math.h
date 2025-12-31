@@ -28,7 +28,7 @@ public:
     
     void printSelf();
 };
-
+//proper matrix mul order should be right to left becuase col major matrices
 Matrix4f operator*(const Matrix4f &A, const Matrix4f &B);
 
 Matrix4f translate(const Matrix4f &matrix, float tx, float ty, float tz);

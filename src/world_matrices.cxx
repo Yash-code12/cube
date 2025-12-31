@@ -61,8 +61,8 @@ void setViewMatrix(GLuint program, GLuint viewLoc, float camX, float camY, float
     0, 0, 1, -camZ,
     0, 0, 0, 1
     );
-    
-    Matrix4f viewMtx = YRot * XRot * Translate;
+    //matrix mul order goes right to left becuase col major matrices
+    Matrix4f viewMtx = Translate * (YRot * XRot);
     
     glUseProgram(program);
     glUniformMatrix4fv(viewLoc, 1, GL_FALSE, viewMtx.m);

@@ -6,10 +6,13 @@
 #include "mesh_file.h"
 
 enum BtnValue{
-    UP = 0,
-    DOWN = 1,
-    LEFT = 2,
-    RIGHT = 3
+    MOVE_FORWARD = 0,
+    MOVE_BACK = 1,
+    MOVE_LEFT = 2,
+    MOVE_RIGHT = 3,
+    
+    MOVE_UP = 4,
+    MOVE_DOWN = 5
 };
 
 class Button{
