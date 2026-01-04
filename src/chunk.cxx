@@ -1,12 +1,12 @@
 #include "chunk.h"
 #include <iostream>
 
-uint16_t Chunk::getBlock(int x, int y, int z) {
+uint16_t Chunk::getBlockId(int x, int y, int z) {
     // Check if coordinates are outside the chunk boundaries
     if (x < 0 || x >= 16 || y < 0 || y >= 256 || z < 0 || z >= 16) {
         return 0; // Treat boundaries as air (or check neighbor chunks)
     }
-    return (*chunkData)[x + (z * 16) + (y * 256)];
+    return (*chunkData)[x + (z * chunkWidth) + ((y - worldFloor) * chunkHeight)];
 }
 
 /*
@@ -68,7 +68,7 @@ std::vector<float> Chunk::generateData(){
         }
         
         float x = i%16;
-        float y = i/256;
+        float y = i/256 + worldFloor; //wf = -64
         float z = (i/16)%16;
         
         float X = chunkX*16 + x;
@@ -80,7 +80,7 @@ std::vector<float> Chunk::generateData(){
         //chunk.X,Z point to top top left
         
         //front face
-        if(getBlock(x, y, z + 1) == 0){
+        if(getBlockId(x, y, z + 1) == 0){
             float u = uvCoords[0][0];
             float v = uvCoords[0][1];
             
@@ -101,7 +101,7 @@ std::vector<float> Chunk::generateData(){
             data.insert(data.end(), quad.begin(), quad.end());
         }
         //back face
-        if(getBlock(x, y, z - 1) == 0){
+        if(getBlockId(x, y, z - 1) == 0){
             float u = uvCoords[1][0];
             float v = uvCoords[1][1];
             
@@ -122,7 +122,7 @@ std::vector<float> Chunk::generateData(){
             data.insert(data.end(), quad.begin(), quad.end());
         }
         //top face
-        if(getBlock(x, y+1, z) == 0){
+        if(getBlockId(x, y+1, z) == 0){
             float u = uvCoords[2][0];
             float v = uvCoords[2][1];
             
@@ -143,7 +143,7 @@ std::vector<float> Chunk::generateData(){
             data.insert(data.end(), quad.begin(), quad.end());
         }
         //bottom face
-        if(getBlock(x, y-1, z) == 0){
+        if(getBlockId(x, y-1, z) == 0){
             float u = uvCoords[3][0];
             float v = uvCoords[3][1];
             
@@ -164,7 +164,7 @@ std::vector<float> Chunk::generateData(){
             data.insert(data.end(), quad.begin(), quad.end());
         }
         //left face
-        if(getBlock(x-1, y, z) == 0){
+        if(getBlockId(x-1, y, z) == 0){
             float u = uvCoords[4][0];
             float v = uvCoords[4][1];
             
@@ -185,7 +185,7 @@ std::vector<float> Chunk::generateData(){
             data.insert(data.end(), quad.begin(), quad.end());
         }
         //right face
-        if(getBlock(x+1, y, z) == 0){
+        if(getBlockId(x+1, y, z) == 0){
             float u = uvCoords[5][0];
             float v = uvCoords[5][1];
             

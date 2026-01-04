@@ -59,6 +59,10 @@ std::vector<UserInput> &fingers);
 
 int main()
 {
+    
+    Camera cam(0, -64, 3);
+    
+    //std::vector<std::unique_ptr<Chunk>>;
     Chunk chunk1;
     chunk1.chunkX = 0;
     chunk1.chunkZ = 0;
@@ -139,7 +143,6 @@ int main()
         return 1;
     }
     GLuint projLoc, viewLoc;
-    Camera cam;
     setupScene(worldProgram.program, projLoc, viewLoc, width, height, cam);
 
     float bgColor[4] = {0.0f, 0.0f, 0.0f, 1.0f};
