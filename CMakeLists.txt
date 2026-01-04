@@ -25,6 +25,8 @@ src/user_input.cxx
 src/program_file.cxx
 src/mesh_file.cxx 
 src/draw_functions.cxx
+src/block.cxx
+src/chunk.cxx
 )
 
 # Link libraries

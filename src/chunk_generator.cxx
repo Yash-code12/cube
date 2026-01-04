@@ -16,6 +16,11 @@ CubeCount = cubesTowardX*cubesTowardY*cubesTowardZ
 no. of floats in a cube = 5*2*6
 total floats = CubeCount*60
 */
+/*
+bool blockExists(float x, float y, float z, vector<GLfloat> allCubes){
+    
+}
+*/
 
 vector<GLfloat> makeChunk(float x, float y, float z, int cubesTowardX, int cubesTowardY, int cubesTowardZ){
     
@@ -31,7 +36,7 @@ vector<GLfloat> makeChunk(float x, float y, float z, int cubesTowardX, int cubes
             for(int cubesInY = 0; cubesInY < cubesTowardY; ++cubesInY){
                 vector<GLfloat> vertices = makeVertices(x+cubesInX, y-cubesInY, z-cubesInZ);
                 
-                //vector<GLfloat> vertices = makeVertices(x, y, z);
+                
                 
                 vector<GLfloat> cube = makeCube(vertices);
                 allCubes.insert(allCubes.end(), cube.begin(), cube.end());
@@ -40,3 +45,4 @@ vector<GLfloat> makeChunk(float x, float y, float z, int cubesTowardX, int cubes
     }
     return allCubes;
 }
+

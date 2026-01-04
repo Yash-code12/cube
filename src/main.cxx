@@ -14,6 +14,8 @@
 #include "user_input.h"
 #include "program_file.h"
 #include "draw_functions.h"
+#include "block.h"
+#include "chunk.h"
 
 //to do, add functionality for camera rotation by user input
 
@@ -57,7 +59,15 @@ std::vector<UserInput> &fingers);
 
 int main()
 {
-    floatData = makeChunk(-5.0f, -2.0f, 5.0f, 10, 1, 10);
+    Chunk chunk1;
+    chunk1.chunkX = 0;
+    chunk1.chunkZ = 0;
+    // Fill it after creation
+    chunk1.chunkData->fill(0);
+    (*chunk1.chunkData)[0] = 1;
+    (*chunk1.chunkData)[16] = 1;
+    floatData = chunk1.generateData();
+    //floatData = makeChunk(-5.0f, -2.0f, 5.0f, 10, 1, 10);
     //for(auto i : floatData) cout << i << ", ";
 
     SDL_Window *window = nullptr;
@@ -71,6 +81,12 @@ int main()
     }
     cout << "Width: " << width << ", "
          << "Height: " << height << "\n";
+         
+     // maxTextureSize[0] now holds the maximum supported dimension (width or height)
+    //make texture size
+    int maxTextureSize[1];
+    glGetIntegerv(GL_MAX_TEXTURE_SIZE, maxTextureSize);
+    cout << "Max texture size: " << maxTextureSize[0] << "\n";
 
     int buttonSize = 200;
     int upButtonX = 300;
@@ -85,7 +101,8 @@ int main()
 
     string vertShaderPath = "shaders/vert.glsl";
     string fragShaderPath = "shaders/frag.glsl";
-    string texturePath = "assets/square.png";
+    string texturePath = "assets/texture-atlas-minecraft.png" ;//"assets/square.png";
+    //string texturePath = "assets/square.png";
     string textureLocName = "u_textureSampler";
     int worldUnit = 0;
     string posLocName = "a_position";
@@ -129,7 +146,7 @@ int main()
     bool running = true;
     UserInput finger1;
     vector<UserInput> fingers;
-    
+
     auto start_time = chrono::high_resolution_clock::now();
     while (running)
     {

@@ -128,6 +128,30 @@ run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
+src/block.o: src/block.cxx.o
+.PHONY : src/block.o
+
+# target to build an object file
+src/block.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/block.cxx.o
+.PHONY : src/block.cxx.o
+
+src/block.i: src/block.cxx.i
+.PHONY : src/block.i
+
+# target to preprocess a source file
+src/block.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/block.cxx.i
+.PHONY : src/block.cxx.i
+
+src/block.s: src/block.cxx.s
+.PHONY : src/block.s
+
+# target to generate assembly for a file
+src/block.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/block.cxx.s
+.PHONY : src/block.cxx.s
+
 src/buttons.o: src/buttons.cxx.o
 .PHONY : src/buttons.o
 
@@ -175,6 +199,30 @@ src/camera.s: src/camera.cxx.s
 src/camera.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/camera.cxx.s
 .PHONY : src/camera.cxx.s
+
+src/chunk.o: src/chunk.cxx.o
+.PHONY : src/chunk.o
+
+# target to build an object file
+src/chunk.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/chunk.cxx.o
+.PHONY : src/chunk.cxx.o
+
+src/chunk.i: src/chunk.cxx.i
+.PHONY : src/chunk.i
+
+# target to preprocess a source file
+src/chunk.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/chunk.cxx.i
+.PHONY : src/chunk.cxx.i
+
+src/chunk.s: src/chunk.cxx.s
+.PHONY : src/chunk.s
+
+# target to generate assembly for a file
+src/chunk.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/chunk.cxx.s
+.PHONY : src/chunk.cxx.s
 
 src/chunk_generator.o: src/chunk_generator.cxx.o
 .PHONY : src/chunk_generator.o
@@ -473,12 +521,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... run"
+	@echo "... src/block.o"
+	@echo "... src/block.i"
+	@echo "... src/block.s"
 	@echo "... src/buttons.o"
 	@echo "... src/buttons.i"
 	@echo "... src/buttons.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
+	@echo "... src/chunk.o"
+	@echo "... src/chunk.i"
+	@echo "... src/chunk.s"
 	@echo "... src/chunk_generator.o"
 	@echo "... src/chunk_generator.i"
 	@echo "... src/chunk_generator.s"

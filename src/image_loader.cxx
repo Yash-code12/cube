@@ -38,15 +38,18 @@ GLuint loadTexture(const char* filePath){
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     
     // Set texture filtering parameters
-    // GL_LINEAR provides smoother results than GL_NEAREST
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR); // Use mipmaps for minification
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    // GL_LINEAR provides smoother results than GL_NEAREST but GL_NEAREST is better in this case because the textures are pixelated and very small 16x16 no need for smoothing (causes bluriness) we want it to look same from everywhere
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    
+    //use for textures which arent pixelated
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR); // Use mipmaps for minification
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     
     // Upload the image data to the texture object
     glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
 
-    // Generate mipmaps
-    glGenerateMipmap(GL_TEXTURE_2D);
+    // Generate mipmaps but not in our case as the texture should look the same from all distances and we arent using the mipmap settings
+    //glGenerateMipmap(GL_TEXTURE_2D);
 
     // After uploading to GPU and generating mipmaps, you can free the CPU memory
     stbi_image_free(data);

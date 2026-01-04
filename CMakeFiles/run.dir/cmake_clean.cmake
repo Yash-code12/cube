@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/run.dir/src/block.cxx.o"
+  "CMakeFiles/run.dir/src/block.cxx.o.d"
   "CMakeFiles/run.dir/src/buttons.cxx.o"
   "CMakeFiles/run.dir/src/buttons.cxx.o.d"
   "CMakeFiles/run.dir/src/camera.cxx.o"
   "CMakeFiles/run.dir/src/camera.cxx.o.d"
+  "CMakeFiles/run.dir/src/chunk.cxx.o"
+  "CMakeFiles/run.dir/src/chunk.cxx.o.d"
   "CMakeFiles/run.dir/src/chunk_generator.cxx.o"
   "CMakeFiles/run.dir/src/chunk_generator.cxx.o.d"
   "CMakeFiles/run.dir/src/cube_generator.cxx.o"
